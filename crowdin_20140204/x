@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/takeru/bin/translate_sm_sbin_make_dic_file_from_crwodin.rb --debug --log-file ./make_dic_file_from_crowdin.log --log-level 10

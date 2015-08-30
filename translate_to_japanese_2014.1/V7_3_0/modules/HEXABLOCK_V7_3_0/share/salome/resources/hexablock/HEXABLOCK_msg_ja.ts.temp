@@ -1,0 +1,639 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TS><TS language='ja' version='2.0'>
+<context>
+    <name>HEXABLOCK::GUI::HexaBaseDialog</name>
+    <message>
+        <source>LAW</source>
+        <translation>法</translation>
+    </message>
+    <message>
+        <source>EDGE</source>
+        <translation>Edge</translation>
+    </message>
+    <message>
+        <source>HEXA</source>
+        <translation>六面体</translation>
+    </message>
+    <message>
+        <source>PIPE</source>
+        <translation>Pipe</translation>
+    </message>
+    <message>
+        <source>QUAD</source>
+        <translation>四角形</translation>
+    </message>
+    <message>
+        <source>GROUP</source>
+        <translation>グループ</translation>
+    </message>
+    <message>
+        <source>ELEMENTS</source>
+        <translation>要素</translation>
+    </message>
+    <message>
+        <source>GEOMPOINT</source>
+        <translation>サミット Geom</translation>
+    </message>
+    <message>
+        <source>GEOMSHAPE</source>
+        <translation>Geométrie</translation>
+    </message>
+    <message>
+        <source>VECTOR</source>
+        <translation>Vector</translation>
+    </message>
+    <message>
+        <source>VERTEX</source>
+        <translation>Vertex</translation>
+    </message>
+    <message>
+        <source>PROPAGATION</source>
+        <translation>スプレッド</translation>
+    </message>
+    <message>
+        <source>CROSSELEMENTS</source>
+        <translation>十字架の要素</translation>
+    </message>
+    <message>
+        <source>GEOMEDGE</source>
+        <translation>エッジ Geom</translation>
+    </message>
+    <message>
+        <source>GEOMFACE</source>
+        <translation>顔 Geom</translation>
+    </message>
+    <message>
+        <source>UNKNOWN_GEOMETRY</source>
+        <translation>不明なジオメトリは ！</translation>
+    </message>
+    <message>
+        <source>HEXA_INFO</source>
+        <translation>HexaBlock</translation>
+    </message>
+    <message>
+        <source>CYLINDER</source>
+        <translation>Cylinder</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>XML_FILES_FILTER</source>
+        <translation>XML ファイル</translation>
+    </message>
+    <message>
+        <source>ALL_FILES_FILTER</source>
+        <translation>すべてのファイル</translation>
+    </message>
+    <message>
+        <source>EXTERNAL_BROWSER_CANNOT_SHOW_PAGE</source>
+        <translation>外部ブラウザー &apos;%1&apos; ページ &apos;%2&apos; のヘルプを表示できません。環境設定で変更しますか。</translation>
+    </message>
+    <message>
+        <source>BUT_OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>WRN_WARNING</source>
+        <translation>注意</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::PerformTransformationDialog</name>
+    <message>
+        <source>CANNOT PERFORM TRANSFORMATION</source>
+        <translation>対称性を達成することは不可能</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>MyGEOMBase_Skeleton</name>
+    <message>
+        <source>GEOM_RSS_ADD_FREFIX</source>
+        <translation>復元されたサブオブジェクトの名前にプレフィックスを追加します。</translation>
+    </message>
+    <message>
+        <source>GEOM_BUT_HELP</source>
+        <translation>ヘルプ</translation>
+    </message>
+    <message>
+        <source>GEOM_PREVIEW</source>
+        <translation>プレビュー</translation>
+    </message>
+    <message>
+        <source>GEOM_BUT_APPLY_AND_CLOSE</source>
+        <translation>適用して閉じる</translation>
+    </message>
+    <message>
+        <source>GEOM_BUT_CLOSE</source>
+        <translation>閉じる</translation>
+    </message>
+    <message>
+        <source>GEOM_BUT_APPLY</source>
+        <translation>適用</translation>
+    </message>
+    <message>
+        <source>GEOM_RESTORE_SUB_SHAPES</source>
+        <translation>グループとサブオブジェクトを取得します。</translation>
+    </message>
+    <message>
+        <source>GEOM_RESULT_NAME_GRP</source>
+        <translation>結果の名前</translation>
+    </message>
+    <message>
+        <source>GEOM_RESULT_NAME_LBL</source>
+        <translation>名前</translation>
+    </message>
+    <message>
+        <source>GEOM_PUBLISH_RESULT_GRP</source>
+        <translation>高度なオプション</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCKGUI</name>
+    <message>
+        <source>CANNOT REMOVE LAW</source>
+        <translation>行為を削除できません。</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_EDGE</source>
+        <translation>エッジ</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_QUAD</source>
+        <translation>四角形</translation>
+    </message>
+    <message>
+        <source>CANNOT REMOVE %1</source>
+        <translation>%1 を削除できませんでした。</translation>
+    </message>
+    <message>
+        <source>CANNOT REMOVE GROUP</source>
+        <translation>グループを削除することはできません。</translation>
+    </message>
+    <message>
+        <source>LAW REMOVED</source>
+        <translation>削除法</translation>
+    </message>
+    <message>
+        <source>Prism quadrangles</source>
+        <translation>四角形の押し出し</translation>
+    </message>
+    <message>
+        <source>Prism Quadrangles</source>
+        <translation>四角形の押出</translation>
+    </message>
+    <message>
+        <source>PLEASE SELECT A PROPAGATION</source>
+        <translation>スプレッドを選択してください。</translation>
+    </message>
+    <message>
+        <source>ADD_SHAPE_FAILED</source>
+        <translation>追加ジオメトリは失敗しました！</translation>
+    </message>
+    <message>
+        <source>ASSOCIATION CLEARED</source>
+        <translation>関連付けの削除</translation>
+    </message>
+    <message>
+        <source>CLEAR_ALL_ASSOCIATIONS_ON</source>
+        <translation>すべての関連付けを削除</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>MODEL_INFO</source>
+        <translation>モデル情報</translation>
+    </message>
+    <message>
+        <source>ADD_SHAPE</source>
+        <translation>ジオメトリを追加</translation>
+    </message>
+    <message>
+        <source>CLEAR_ASSOCIATIONS</source>
+        <translation>関連付けを削除</translation>
+    </message>
+    <message>
+        <source>GROUP REMOVED</source>
+        <translation>削除されたグループ</translation>
+    </message>
+    <message>
+        <source>HEXABLOCK</source>
+        <translation>HexaBlock</translation>
+    </message>
+    <message>
+        <source>HEXA_INFO</source>
+        <translation>HexaBlock</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_VERTEX</source>
+        <translation>頂点</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::PropagationDialog</name>
+    <message>
+        <source>CANNOT SET PROPAGATION</source>
+        <translation>普及を適用できません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::DocumentModel</name>
+    <message>
+        <source>TREE_ITEM_EDGE</source>
+        <translation>エッジ</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_HEXA</source>
+        <translation>六面体</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_QUAD</source>
+        <translation>四角形</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_PIPE</source>
+        <translation>パイプ</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_LAW</source>
+        <translation>法律</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_CROSSELEMENT</source>
+        <translation>十字架の要素</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_EXPSHAPE</source>
+        <translation>明示的なジオメトリ</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_CYLINDER</source>
+        <translation>シリンダー</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_CLOUD_OF_POINT</source>
+        <translation>ポイント雲</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_PROPAGATION</source>
+        <translation>伝搬</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_IMPSHAPE</source>
+        <translation>暗黙的なジオメトリ</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_ELEMENT</source>
+        <translation>要素</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_GROUP</source>
+        <translation>グループ</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_VERTEX</source>
+        <translation>Vertexes</translation>
+    </message>
+    <message>
+        <source>TREE_ITEM_VECTOR</source>
+        <translation>ベクトル</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::QuadRevolutionDialog</name>
+    <message>
+        <source>CANNOT MAKE QUAD REVOLUTION</source>
+        <translation>革命を実行できません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MergeDialog</name>
+    <message>
+        <source>CANNOT MERGE</source>
+        <translation>マージすることはできません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakePipesDialog</name>
+    <message>
+        <source>CANNOT MAKE PIPES</source>
+        <translation>パイプを作成できません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::PerformSymmetryDialog</name>
+    <message>
+        <source>CANNOT PERFORM SYMMETRY</source>
+        <translation>対称性を達成することは不可能</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::LawDialog</name>
+    <message>
+        <source>CANNOT ADD LAW</source>
+        <translation>行為を追加することはできません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::DisconnectDialog</name>
+    <message>
+        <source>CANNOT DISCONNECT</source>
+        <translation>接続を切断できません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::QuadDialog</name>
+    <message>
+        <source>CANNOT BUILD QUAD</source>
+        <translation>四角形をビルドできません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>Quad Information</source>
+        <translation>四角形の情報</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::EdgeDialog</name>
+    <message>
+        <source>CANNOT BUILD EDGE</source>
+        <translation>端をビルドできません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::HexaDialog</name>
+    <message>
+        <source>CANNOT BUILD HEXA</source>
+        <translation>六面体をビルドできません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::VertexDialog</name>
+    <message>
+        <source>VERTEX UPDATE/CONSTRUCTION</source>
+        <translation>サミットの作成/更新</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::JoinQuadDialog</name>
+    <message>
+        <source>CANNOT JOIN QUAD(S)</source>
+        <translation>四角形の上側を添付することはできません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::GroupDialog</name>
+    <message>
+        <source>CANNOT ADD GROUP</source>
+        <translation>グループを追加できません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::ReplaceHexaDialog</name>
+    <message>
+        <source>CANNOT REPLACE HEXA</source>
+        <translation>六面体を置き換えることができません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::PrismQuadDialog</name>
+    <message>
+        <source>CANNOT PRISM QUAD(S)</source>
+        <translation>四角形 （s） を押し出すことができません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakeCylindersDialog</name>
+    <message>
+        <source>CANNOT MAKE CYLINDERS</source>
+        <translation>シリンダーを作成できません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::VectorDialog</name>
+    <message>
+        <source>CANNOT BUILD VECTOR</source>
+        <translation>ベクトルを作成することはできません。</translation>
+    </message>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::CutEdgeDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT CUT EDGE</source>
+        <translation>エッジをカットすることはできません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::CylinderDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT ADD CYLINDER</source>
+        <translation>シリンダーを追加できません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::EdgeAssocDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE EDGE ASSOCIATION</source>
+        <translation>エッジを関連付けることができません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakeCylinderDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE CYLINDER</source>
+        <translation>シリンダーを作成できません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakeGridDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE GRID</source>
+        <translation>グリッドを作成することができません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakeHemiSphereDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE RIND</source>
+        <translation>半球を作成できません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakePipeDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE PIPE</source>
+        <translation>パイプを作成できません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakeSymmetryDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE TRANSFORMATION</source>
+        <translation>対称性を達成することは不可能</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MakeTransformationDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE TRANSFORMATION</source>
+        <translation>対称性を達成することは不可能</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::MyBasicGUI_PointDlg</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE VERTEX ASSOCIATION</source>
+        <translation>サミットを関連付けることができません。</translation>
+    </message>
+    <message>
+        <source>HEXA_INFO</source>
+        <translation>HexaBlock</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::PipeDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT ADD PIPE</source>
+        <translation>パイプを追加することはできません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::QuadAssocDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT MAKE QUAD ASSOCIATION</source>
+        <translation>顔を関連付けることはできません。</translation>
+    </message>
+</context>
+<context>
+    <name>HEXABLOCK::GUI::RemoveHexaDialog</name>
+    <message>
+        <source>ERR_ERROR</source>
+        <translation>エラー</translation>
+    </message>
+    <message>
+        <source>CANNOT REMOVE HEXA</source>
+        <translation>六面体を削除できません。</translation>
+    </message>
+</context>
+</TS>

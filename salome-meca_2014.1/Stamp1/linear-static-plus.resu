@@ -1,0 +1,76 @@
+                                                                                
+                                                                                
+              -- CODE_ASTER -- VERSION : EXPLOITATION (stable) --               
+                                                                                
+                     Version 11.5.0 modifiée le 10/12/2013                      
+                       révision 2b68bca7 - branche 'v11'                        
+                         Copyright EDF R&D 1991 - 2014                          
+                                                                                
+                    Exécution du : Wed Feb 26 16:03:29 2014                     
+                      Nom de la machine : tobysalome20141                       
+                              Architecture : 64bit                              
+                          Type de processeur : x86_64                           
+                Système d'exploitation : Linux 3.11.0-15-generic                
+                        Langue des messages : ja (UTF-8)                        
+                                                                                
+                           Version de Python : 2.7.3                            
+                            Version de NumPy : 1.7.1                            
+                           Parallélisme MPI : inactif                           
+                          Parallélisme OpenMP : actif                           
+                        Nombre de processus utilisés : 1                        
+                     Version de la librairie HDF5 : 1.8.10                      
+                      Version de la librairie MED : 3.0.7                       
+                     Version de la librairie MUMPS : 4.10.0                     
+                    Version de la librairie SCOTCH : 5.1.10                     
+                  Mémoire limite pour l'exécution : 762.00 Mo                   
+                   consommée par l'initialisation : 213.08 Mo                   
+                  par les objets du jeu de commandes : 2.03 Mo                  
+                 reste pour l'allocation dynamique : 546.89 Mo                  
+                Taille limite des fichiers d'échange : 48.00 Go                 
+                                                                                
+   
+   !-----------------------------------------------------------------------------------------------------!
+   ! <A> <SUPERVIS_42>                                                                                   !
+   !                                                                                                     !
+   ! Les fichiers suivants ont été modifiés par rapport à la dernière révision 2b68bca7 :                !
+   !                                                                                                     !
+   ! binary_archive.log, checkout.log, configure.log, hg_diff.log, install.log, make.log, postinstall.sh !
+   !                                                                                                     !
+   !                                                                                                     !
+   ! Ceci est une alarme. Si vous ne comprenez pas le sens de cette                                      !
+   ! alarme, vous pouvez obtenir des résultats inattendus !                                              !
+   !-----------------------------------------------------------------------------------------------------!
+   
+ <I> <FIN> FERMETURE DE LA BASE "GLOBALE" EFFECTUEE.
+
+ <FIN> Arrêt normal dans "FIN".
+ <I> <FIN> ARRET NORMAL DANS "FIN" PAR APPEL A "JEFINI".
+  
+ <I> <FIN> MEMOIRE JEVEUX MINIMALE REQUISE POUR L'EXECUTION :                      22.45 Mo
+ <I> <FIN> MEMOIRE JEVEUX OPTIMALE REQUISE POUR L'EXECUTION :                      27.65 Mo
+ <I> <FIN> MAXIMUM DE MEMOIRE UTILISEE PAR LE PROCESSUS LORS DE L'EXECUTION :     250.56 Mo
+
+ ********************************************************************************
+ * COMMAND                  :       USER :     SYSTEM :   USER+SYS :    ELAPSED *
+ ********************************************************************************
+ * init (jdc)               :       0.55 :       0.12 :       0.67 :       0.71 *
+ *  . compile               :       0.00 :       0.00 :       0.00 :       0.00 *
+ *  . exec_compile          :       0.15 :       0.07 :       0.22 :       0.22 *
+ *  . report                :       0.01 :       0.00 :       0.01 :       0.01 *
+ *  . build                 :       0.00 :       0.00 :       0.00 :       0.00 *
+ * DEBUT                    :       0.05 :       0.07 :       0.12 :       0.25 *
+ * DEFI_MATERIAU            :       0.00 :       0.01 :       0.01 :       0.01 *
+ * LIRE_MAILLAGE            :       0.06 :       0.01 :       0.07 :       0.08 *
+ * AFFE_MODELE              :       0.04 :       0.00 :       0.04 :       0.05 *
+ * AFFE_MATERIAU            :       0.03 :       0.01 :       0.04 :       0.03 *
+ * AFFE_CHAR_MECA           :       0.03 :       0.00 :       0.03 :       0.03 *
+ * MECA_STATIQUE            :       0.16 :       0.02 :       0.18 :       0.18 *
+ * CALC_CHAMP               :       0.08 :       0.00 :       0.08 :       0.09 *
+ * IMPR_RESU                :       0.06 :       0.02 :       0.08 :       0.07 *
+ * FIN                      :       0.03 :       0.08 :       0.11 :       0.13 *
+ *  . part Superviseur      :       0.68 :       0.20 :       0.88 :       1.10 *
+ *  . part Fortran          :       0.45 :       0.15 :       0.60 :       0.59 *
+ ********************************************************************************
+ * TOTAL_JOB                :       1.13 :       0.35 :       1.48 :       1.69 *
+ ********************************************************************************
+

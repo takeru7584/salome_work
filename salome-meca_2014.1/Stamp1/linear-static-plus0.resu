@@ -1,0 +1,82 @@
+                                                                                
+                                                                                
+              -- CODE_ASTER -- VERSION : EXPLOITATION (stable) --               
+                                                                                
+                     Version 11.5.0 modifiée le 10/12/2013                      
+                       révision 2b68bca7 - branche 'v11'                        
+                         Copyright EDF R&D 1991 - 2014                          
+                                                                                
+                    Exécution du : Wed Feb 26 15:42:52 2014                     
+                      Nom de la machine : tobysalome20141                       
+                              Architecture : 64bit                              
+                          Type de processeur : x86_64                           
+                Système d'exploitation : Linux 3.11.0-15-generic                
+                        Langue des messages : ja (UTF-8)                        
+                                                                                
+                           Version de Python : 2.7.3                            
+                            Version de NumPy : 1.7.1                            
+                           Parallélisme MPI : inactif                           
+                          Parallélisme OpenMP : actif                           
+                        Nombre de processus utilisés : 1                        
+                     Version de la librairie HDF5 : 1.8.10                      
+                      Version de la librairie MED : 3.0.7                       
+                     Version de la librairie MUMPS : 4.10.0                     
+                    Version de la librairie SCOTCH : 5.1.10                     
+                  Mémoire limite pour l'exécution : 762.00 Mo                   
+                   consommée par l'initialisation : 213.08 Mo                   
+                  par les objets du jeu de commandes : 2.02 Mo                  
+                 reste pour l'allocation dynamique : 546.76 Mo                  
+                Taille limite des fichiers d'échange : 48.00 Go                 
+                                                                                
+   
+   !-----------------------------------------------------------------------------------------------------!
+   ! <A> <SUPERVIS_42>                                                                                   !
+   !                                                                                                     !
+   ! Les fichiers suivants ont été modifiés par rapport à la dernière révision 2b68bca7 :                !
+   !                                                                                                     !
+   ! binary_archive.log, checkout.log, configure.log, hg_diff.log, install.log, make.log, postinstall.sh !
+   !                                                                                                     !
+   !                                                                                                     !
+   ! Ceci est une alarme. Si vous ne comprenez pas le sens de cette                                      !
+   ! alarme, vous pouvez obtenir des résultats inattendus !                                              !
+   !-----------------------------------------------------------------------------------------------------!
+   
+   
+   !------------------------------------------------------------!
+   ! <EXCEPTION> <CALCULEL_34>                                  !
+   !                                                            !
+   !  le calcul de l'option :  CHAR_MECA_FR1D3D                 !
+   !  n'est possible pour aucun des types d'éléments du LIGREL. !
+   !------------------------------------------------------------!
+   
+ <I> <FIN> FERMETURE DE LA BASE "GLOBALE" EFFECTUEE.
+
+ <FIN> Arrêt normal dans "FIN".
+ <I> <FIN> ARRET NORMAL DANS "FIN" PAR APPEL A "JEFINI".
+  
+ <I> <FIN> MEMOIRE JEVEUX MINIMALE REQUISE POUR L'EXECUTION :                      21.32 Mo
+ <I> <FIN> MEMOIRE JEVEUX OPTIMALE REQUISE POUR L'EXECUTION :                      27.33 Mo
+ <I> <FIN> MAXIMUM DE MEMOIRE UTILISEE PAR LE PROCESSUS LORS DE L'EXECUTION :     249.11 Mo
+
+ ********************************************************************************
+ * COMMAND                  :       USER :     SYSTEM :   USER+SYS :    ELAPSED *
+ ********************************************************************************
+ * init (jdc)               :       0.91 :       2.28 :       3.19 :       3.59 *
+ *  . compile               :       0.00 :       0.01 :       0.01 :       0.00 *
+ *  . exec_compile          :       0.29 :       0.55 :       0.84 :       1.03 *
+ *  . report                :       0.24 :       0.48 :       0.72 :       0.73 *
+ *  . build                 :       0.00 :       0.00 :       0.00 :       0.00 *
+ * DEBUT                    :       3.28 :      18.33 :      21.61 :      28.94 *
+ * DEFI_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.00 *
+ * LIRE_MAILLAGE            :       0.00 :       0.00 :       0.00 :       0.16 *
+ * AFFE_MODELE              :       0.00 :       0.00 :       0.00 :       0.12 *
+ * AFFE_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.02 *
+ * AFFE_CHAR_MECA           :       0.00 :       0.00 :       0.00 :       0.04 *
+ * MECA_STATIQUE            :       0.61 :       0.00 :       0.61 :       0.71 *
+ * FIN                      :       0.61 :       0.00 :       0.61 :       0.33 *
+ *  . part Superviseur      :       7.11 :      26.66 :      33.77 :      45.05 *
+ *  . part Fortran          :       0.61 :       0.00 :       0.61 :       0.99 *
+ ********************************************************************************
+ * TOTAL_JOB                :       7.72 :      26.66 :      34.38 :      46.04 *
+ ********************************************************************************
+

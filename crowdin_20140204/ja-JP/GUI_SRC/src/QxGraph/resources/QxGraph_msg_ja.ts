@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS>
+  <context>
+    <name>@default</name>
+    <message>
+      <source>MEN_CHANGE_BACKGROUND</source>
+      <translation>背景を変更する.</translation>
+    </message>
+    <message>
+      <source>MNU_PAN_VIEW</source>
+      <translation>パンニング</translation>
+    </message>
+    <message>
+      <source>DSC_PAN_VIEW</source>
+      <translation>ビューを移動します。</translation>
+    </message>
+    <message>
+      <source>MNU_RESET_VIEW</source>
+      <translation>復元</translation>
+    </message>
+    <message>
+      <source>DSC_RESET_VIEW</source>
+      <translation>ビューのポイントを復元します。</translation>
+    </message>
+    <message>
+      <source>LBL_TOOLBAR_LABEL</source>
+      <translation>可視化の操作</translation>
+    </message>
+  </context>
+</TS>

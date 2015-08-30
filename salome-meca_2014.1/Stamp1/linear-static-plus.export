@@ -1,0 +1,30 @@
+P uclient takeru
+P mclient tobysalome20141
+P follow_output yes
+P display tobysalome20141:0
+P actions make_etude
+P version stable
+P nomjob linear-static-plus
+P debug nodebug
+P mode interactif
+P ncpus 1
+P memjob 524288.0
+A memjeveux 64.0
+P tpsjob 10
+A tpmax 600
+P username takeru
+P serveur localhost
+P aster_root /opt/salome/V7_3_0/tools/Code_aster_frontend_20141
+P protocol_exec asrun.plugins.server.SSHServer
+P protocol_copyto asrun.plugins.server.SCPServer
+P protocol_copyfrom asrun.plugins.server.SCPServer
+P proxy_dir /tmp
+P consbtc oui
+P soumbtc oui
+P origine salomemeca_asrun 1.10.0
+F comm /home/takeru/salome_work/salome-meca_2014.1/Stamp1/Stamp2.comm D 1
+F mmed /home/takeru/salome_work/salome-meca_2014.1/Stamp1/linear-static-plus.mmed D 20
+F mess /home/takeru/salome_work/salome-meca_2014.1/Stamp1/linear-static-plus.mess R 6
+F resu /home/takeru/salome_work/salome-meca_2014.1/Stamp1/linear-static-plus.resu R 8
+F rmed /home/takeru/salome_work/salome-meca_2014.1/Stamp1/linear-static-plus.rmed R 80
+R base /home/takeru/salome_work/salome-meca_2014.1/Stamp1/linear-static-plus.base RC 0

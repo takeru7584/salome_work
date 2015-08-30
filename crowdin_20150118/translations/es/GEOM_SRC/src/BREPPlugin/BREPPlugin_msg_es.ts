@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="es-ES" sourcelanguage="en">
+  <context>
+    <name>@default</name>
+    <message>
+      <source>MEN_EXPORTBREP</source>
+      <translation>MEN_EXPORTBREP</translation>
+    </message>
+    <message>
+      <source>TOP_EXPORTBREP</source>
+      <translation>TOP_EXPORTBREP</translation>
+    </message>
+    <message>
+      <source>STB_EXPORTBREP</source>
+      <translation>STB_EXPORTBREP</translation>
+    </message>
+    <message>
+      <source>MEN_IMPORTBREP</source>
+      <translation>MEN_IMPORTBREP</translation>
+    </message>
+    <message>
+      <source>TOP_IMPORTBREP</source>
+      <translation>TOP_IMPORTBREP</translation>
+    </message>
+    <message>
+      <source>STB_IMPORTBREP</source>
+      <translation>STB_IMPORTBREP</translation>
+    </message>
+  </context>
+  <context>
+    <name>BREPPlugin_GUI</name>
+    <message>
+      <source>BREP_FILES</source>
+      <translation>BREP_FILES</translation>
+    </message>
+    <message>
+      <source>EXPORT_TITLE</source>
+      <translation>EXPORT_TITLE</translation>
+    </message>
+    <message>
+      <source>IMPORT_TITLE</source>
+      <translation>IMPORT_TITLE</translation>
+    </message>
+  </context>
+</TS>

@@ -1,0 +1,33 @@
+--- /opt/salome_meca/V2015_1/tools/Eficas_aster_20151/Aster/prefs_ASTER.py.org	2015-03-02 01:34:10.807916870 +0900
++++ /opt/salome_meca/V2015_1/tools/Eficas_aster_20151/Aster/prefs_ASTER.py.arrange	2015-03-02 01:38:39.640319083 +0900
+@@ -23,6 +23,7 @@
+ # repIni sert a localiser le fichier editeur.ini
+ # Obligatoire
+ repIni = osp.dirname(osp.abspath(__file__))
++rep_cata = osp.join(repIni, 'Cata')
+ 
+ rep_stable = os.environ["ASTER_STABLE"]
+ rep_testing = os.environ["ASTER_TESTING"]
+@@ -44,12 +45,14 @@
+ rep_mat_stable = ''
+ rep_mat_123 = ''
+ rep_mat_testing = ''
++rep_mat_STA11ja = ''
+ 
+ path_doc = ''
+ rep_doc_stable = osp.join(repIni, 'Doc', 'clefs_docu_stable')
+ rep_doc_117 = rep_doc_stable
+ rep_doc_testing = osp.join(repIni, 'Doc', 'clefs_docu_testing')
+ rep_doc_123 = rep_doc_testing
++rep_doc_STA11ja = rep_doc_stable
+ exec_acrobat = "/usr/bin/firefox"
+ 
+ catalogues=(
+@@ -57,6 +60,7 @@
+     ('ASTER', 'stable',  osp.join(rep_stable,  'lib/aster/Cata/cata.py'), 'python', 'defaut'),
+     ('ASTER', '12.3',    osp.join(rep_testing, 'lib/aster/Cata/cata.py'), 'python'),
+     ('ASTER', 'testing', osp.join(rep_testing, 'lib/aster/Cata/cata.py'), 'python'),
++    ('ASTER', 'STA11ja', osp.join(rep_cata, 'cata_v11ja'), 'python'),
+ )
+ 
+ def addCatalog(catalogName, catalogPath):

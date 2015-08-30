@@ -1,0 +1,464 @@
+# ------------------------------------------------------------------------------------------
+# Impression du contenu du fichier de commandes à exécuter :
+# ------------------------------------------------------------------------------------------
+DEBUT();
+
+MA=DEFI_MATERIAU(ELAS=_F(E=210000.0,
+                         NU=0.3,),);
+
+MAIL=LIRE_MAILLAGE(FORMAT='MED',);
+
+
+
+MODE=AFFE_MODELE(MAILLAGE=MAIL,
+                 AFFE=_F(TOUT='OUI',
+                         PHENOMENE='MECANIQUE',
+                         MODELISATION='AXIS',),);
+
+MATE=AFFE_MATERIAU(MAILLAGE=MAIL,
+                   AFFE=_F(TOUT='OUI',
+                           MATER=MA,),);
+
+CHAR=AFFE_CHAR_MECA(MODELE=MODE,
+                    DDL_IMPO=(
+                        _F(GROUP_MA='fix',
+                           DX=0.0,
+                           DY=0.0,),
+                        ),
+                    FORCE_ARETE=(
+                        _F(GROUP_MA='load',
+                           FY=-200.0,),
+                        ),
+                    );
+
+RESU=MECA_STATIQUE(MODELE=MODE,
+                   CHAM_MATER=MATE,
+                   EXCIT=_F(CHARGE=CHAR,),);
+
+RESU=CALC_CHAMP(reuse=RESU,
+               RESULTAT=RESU,
+               CONTRAINTE=('SIGM_ELNO','SIGM_NOEU'),
+               CRITERES=('SIEQ_ELNO','SIEQ_NOEU',),);
+
+IMPR_RESU(FORMAT='MED',
+          UNITE=80,
+          RESU=_F(RESULTAT=RESU,
+                  NOM_CHAM=('SIGM_NOEU','SIEQ_NOEU','DEPL',),),);
+
+FIN();
+
+# ------------------------------------------------------------------------------------------
+                                                                                
+                                                                                
+              -- CODE_ASTER -- VERSION : EXPLOITATION (stable) --               
+                                                                                
+                     Version 11.5.0 modifiée le 10/12/2013                      
+                       révision 2b68bca7 - branche 'v11'                        
+                         Copyright EDF R&D 1991 - 2014                          
+                                                                                
+                    Exécution du : Wed Feb 26 15:42:52 2014                     
+                      Nom de la machine : tobysalome20141                       
+                              Architecture : 64bit                              
+                          Type de processeur : x86_64                           
+                Système d'exploitation : Linux 3.11.0-15-generic                
+                        Langue des messages : ja (UTF-8)                        
+                                                                                
+                           Version de Python : 2.7.3                            
+                            Version de NumPy : 1.7.1                            
+                           Parallélisme MPI : inactif                           
+                          Parallélisme OpenMP : actif                           
+                        Nombre de processus utilisés : 1                        
+                     Version de la librairie HDF5 : 1.8.10                      
+                      Version de la librairie MED : 3.0.7                       
+                     Version de la librairie MUMPS : 4.10.0                     
+                    Version de la librairie SCOTCH : 5.1.10                     
+
+                  Mémoire limite pour l'exécution : 762.00 Mo                   
+                   consommée par l'initialisation : 213.08 Mo                   
+                  par les objets du jeu de commandes : 2.02 Mo                  
+                 reste pour l'allocation dynamique : 546.76 Mo                  
+                Taille limite des fichiers d'échange : 48.00 Go                 
+                                                                                
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0001            Concept de type : -
+  # ------------------------------------------------------------------------------------------
+  DEBUT(INFO=1,
+        PAR_LOT='OUI',
+        IMPR_MACRO='NON',
+        MEMOIRE=_F(TAILLE_BLOC=800.0,
+                   TAILLE_GROUP_ELEM=1000,),
+        RESERVE_CPU=_F(BORNE=900,),
+        MESURE_TEMPS=_F(MOYENNE='OUI',
+                        NIVE_DETAIL=1,),
+        )
+
+   
+   !-----------------------------------------------------------------------------------------------------!
+   ! <A> <SUPERVIS_42>                                                                                   !
+   !                                                                                                     !
+   ! Les fichiers suivants ont été modifiés par rapport à la dernière révision 2b68bca7 :                !
+   !                                                                                                     !
+   ! binary_archive.log, checkout.log, configure.log, hg_diff.log, install.log, make.log, postinstall.sh !
+   !                                                                                                     !
+   !                                                                                                     !
+   ! Ceci est une alarme. Si vous ne comprenez pas le sens de cette                                      !
+   ! alarme, vous pouvez obtenir des résultats inattendus !                                              !
+   !-----------------------------------------------------------------------------------------------------!
+   
+
+  Valeur initiale du temps CPU maximum =   600 secondes
+  Valeur du temps CPU maximum passé aux commandes =   540 secondes
+  Réserve CPU prévue = 60 secondes
+
+  Début de lecture...
+
+
+     Réouverture de la base
+
+     Nom de la base                          :  ELEMBASE
+     Créée avec la version                   :  11.05.00
+     Nombre d'enregistrements utilisés       :  24
+     Nombre d'enregistrements maximum        :  512
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre d'identificateurs utilisés       :  123
+     Taille maximum du répertoire            :  300
+     Pourcentage d'utilisation du répertoire :  41 %
+
+
+     Fermeture de la base
+
+     Nom de la base                          :  ELEMBASE
+     Nombre d'enregistrements utilisés       :  24
+     Nombre d'enregistrements maximum        :  512
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture         :  49
+     Volume des accès en lecture             :         38.28 Mo.
+     Nombre total d'accès en écriture        :  3
+     Volume des accès en écriture            :          2.34 Mo.
+     Nombre d'identificateurs utilisés       :  123
+     Taille maximum du répertoire            :  300
+     Pourcentage d'utilisation du répertoire :  41 %
+
+  Relecture des catalogues des éléments faite.
+
+  Fin de lecture (durée  0.000000  s.) 
+  # Mémoire (Mo) :   242.95 /   238.48 /    27.33 /    14.96 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0001   user+syst:       21.61s (syst:       18.33s, elaps:       28.94s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0002            Concept de type : mater_sdaster
+  # ------------------------------------------------------------------------------------------
+  MA = DEFI_MATERIAU(ELAS=_F(E=2.10000E5,
+                             NU=0.3,),
+                     INFO=1,)
+
+
+ MATERIAU : MA      
+ RELATION DE COMPORTEMENT: ELAS            
+
+
+  # Mémoire (Mo) :   242.95 /   238.48 /    27.33 /    14.96 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0002   user+syst:        0.00s (syst:        0.00s, elaps:        0.00s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0003            Concept de type : maillage_sdaster
+  # ------------------------------------------------------------------------------------------
+  MAIL = LIRE_MAILLAGE(FORMAT='MED',
+                       INFO_MED=1,
+                       INFO=1,
+                       UNITE=20,
+                       VERI_MAIL=_F(APLAT=1.E-3,
+                                    VERIF='OUI',),
+                       )
+
+ CONN(1..12)=                     1                     7                     7
+                     8                     8                     9
+                     9                    10                    10
+                    11                    11                    12
+ CONN(1..12)=                     2                    39                   170
+                    40                    40                   170
+                   171                    41                    41
+                   171                   172                    42
+ FAM(1..12)=                     0                     0                     0
+                     0                     0                     0
+                     0                     0                     0
+                     0                     0                     0
+ FAM(1..12)=                     0                     0                     0
+                     0                     0                     0
+                     0                     0                     0
+                     0                     0                     0
+ FAM(1..12)=                     0                     0                     0
+                     0                     0                     0
+                     0                     0                     0
+                     0                     0                     0
+  ====== VERIFICATION DU MAILLAGE ======
+ 
+
+------------ MAILLAGE MAIL     - IMPRESSIONS NIVEAU  1 ------------
+
+ME-26-FEVR-2014 15:43:26                                                        
+
+NOMBRE DE NOEUDS                        1225
+
+NOMBRE DE MAILLES                       1326
+                              SEG2                  170
+                              QUAD4                1156
+
+NOMBRE DE GROUPES DE MAILLES               2
+                              fix                                 34
+                              load                                10
+
+--------------------------------------------------------------------------------
+
+  # Mémoire (Mo) :   242.95 /   238.88 /    27.33 /    14.96 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0003   user+syst:        0.00s (syst:        0.00s, elaps:        0.16s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0004            Concept de type : modele_sdaster
+  # ------------------------------------------------------------------------------------------
+  MODE = AFFE_MODELE(MAILLAGE=MAIL,
+                     AFFE=_F(PHENOMENE='MECANIQUE',
+                             TOUT='OUI',
+                             MODELISATION=('AXIS', ),),
+                     INFO=1,
+                     VERI_JACOBIEN='OUI',
+                     PARTITION=_F(PARALLELISME='GROUP_ELEM',),
+                     )
+
+
+ SUR LES         1326 MAILLES DU MAILLAGE MAIL    
+    ON A DEMANDE L'AFFECTATION DE         1326
+    ON A PU EN AFFECTER                   1326
+
+    MODELISATION      ELEMENT FINI      TYPE MAILLE          NOMBRE
+    AXIS              MEAXQU4           QUAD4                  1156
+                      MEAXSE2           SEG2                    170
+
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.00      0.00      0.01
+  # Mémoire (Mo) :   245.84 /   245.64 /    27.33 /    21.30 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0004   user+syst:        0.00s (syst:        0.00s, elaps:        0.12s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0005            Concept de type : cham_mater
+  # ------------------------------------------------------------------------------------------
+  MATE = AFFE_MATERIAU(MAILLAGE=MAIL,
+                       AFFE=_F(MATER=(MA, ),
+                               TOUT='OUI',),
+                       INFO=1,
+                       )
+
+  # Mémoire (Mo) :   245.84 /   245.64 /    27.33 /    21.30 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0005   user+syst:        0.00s (syst:        0.00s, elaps:        0.02s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0006            Concept de type : char_meca
+  # ------------------------------------------------------------------------------------------
+  CHAR = AFFE_CHAR_MECA(MODELE=MODE,
+                        DDL_IMPO=_F(GROUP_MA=('fix', ),
+                                    DX=0.0,
+                                    DY=0.0,),
+                        FORCE_ARETE=_F(GROUP_MA=('load', ),
+                                       FY=-200.0,),
+                        INFO=1,
+                        VERI_NORM='OUI',
+                        )
+
+  # Mémoire (Mo) :   245.91 /   245.70 /    27.33 /    21.30 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin commande No : 0006   user+syst:        0.00s (syst:        0.00s, elaps:        0.04s)
+  # ------------------------------------------------------------------------------------------
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0007            Concept de type : evol_elas
+  # ------------------------------------------------------------------------------------------
+  RESU = MECA_STATIQUE(MODELE=MODE,
+                       CHAM_MATER=MATE,
+                       EXCIT=_F(CHARGE=CHAR,
+                                TYPE_CHARGE='FIXE',),
+                       INFO=1,
+                       INST=0.0,
+                       OPTION='SIEF_ELGA',
+                       SOLVEUR=_F(RENUM='METIS',
+                                  STOP_SINGULIER='OUI',
+                                  NPREC=8,
+                                  METHODE='MULT_FRONT',),
+                       )
+
+
+Le système linéaire à résoudre contient 1365 noeuds dont:
+   - 1225 noeuds portant des degrés de liberté physiques
+   - 140 noeuds portant des degrés de liberté de Lagrange
+Pour un total de 2590 équations.
+
+La matrice est de taille 2590 équations.
+Elle contient 22933 termes non nuls si elle est symétrique et 43276 termes non nuls si elle n'est pas symétrique (le nombre de
+termes non nuls est susceptible de varier si l'on utilise le contact en formulation continue ou la méthode XFEM avec contact).
+Soit un taux de remplissage de   0.645 %.
+   
+   !------------------------------------------------------------!
+   ! <EXCEPTION> <CALCULEL_34>                                  !
+   !                                                            !
+   !  le calcul de l'option :  CHAR_MECA_FR1D3D                 !
+   !  n'est possible pour aucun des types d'éléments du LIGREL. !
+   !------------------------------------------------------------!
+   
+
+  Destruction du concept 'RESU'.
+
+  # ------------------------------------------------------------------------------------------
+  # Commande No :  0008            Concept de type : -
+  # ------------------------------------------------------------------------------------------
+  FIN(RETASSAGE='NON',
+      INFO_RESU='OUI',
+      FORMAT_HDF='NON',
+      UNITE=6,)
+
+   
+   !-------------------------------------------------------------------------!
+   ! <I> <CATAMESS_89>                                                       !
+   !                                                                         !
+   !     Liste des alarmes émises lors de l'exécution du calcul.             !
+   !                                                                         !
+   !     Les alarmes que vous avez choisies d'ignorer sont précédées de (*). !
+   !     Nombre d'occurrences pour chacune des alarmes :                     !
+   !            SUPERVIS_42          émise    1 fois                         !
+   !-------------------------------------------------------------------------!
+   
+ ---------------------------------------------------------------------------
+ Concepts de la base: G
+    Nom       Type                 Taille (Mo)         Nombre      Nombre de
+                                                     d'objets       segments
+    TOTAL                                15.61            121            232
+  
+    MA         MATER_SDASTER              0.00              4              4
+    MAIL       MAILLAGE_SDASTER           0.16             35             50
+    MODE       MODELE_SDASTER             0.10              8             13
+    MATE       CHAM_MATER                 0.00              5             10
+    CHAR       CHAR_MECA                  0.08             24             49
+    &FOZERO                               0.00              2              2
+    &&_NUM_C                              0.00              1              1
+    &CATA.AC                              0.00              2              4
+    &CATA.CL                              0.26              1              3
+    &CATA.GD                              0.04              4             11
+    &CATA.ME                              0.14              2              4
+    &CATA.OP                              0.28              4             19
+    &CATA.PH                              0.00              1              1
+    &CATA.PR                              0.00              2              4
+    &CATA.TE                             14.53             17             42
+    &CATA.TH                              0.01              2              4
+    &CATA.TM                              0.02              7             11
+ ---------------------------------------------------------------------------
+
+
+     Fermeture de la base
+
+     Nom de la base                          :  GLOBALE
+     Nombre d'enregistrements utilisés       :  27
+     Nombre d'enregistrements maximum        :  62914
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture         :  7
+     Volume des accès en lecture             :          5.47 Mo.
+     Nombre total d'accès en écriture        :  41
+     Volume des accès en écriture            :         32.03 Mo.
+     Nombre d'identificateurs utilisés       :  274
+     Taille maximum du répertoire            :  2000
+     Pourcentage d'utilisation du répertoire :  13 %
+
+
+     Fermeture de la base
+
+     Nom de la base                          :  VOLATILE
+     Nombre d'enregistrements utilisés       :  3
+     Nombre d'enregistrements maximum        :  62914
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture         :  0
+     Volume des accès en lecture             :          0.00 Mo.
+     Nombre total d'accès en écriture        :  4
+     Volume des accès en écriture            :          3.12 Mo.
+     Nombre d'identificateurs utilisés       :  531
+     Taille maximum du répertoire            :  2000
+     Pourcentage d'utilisation du répertoire :  26 %
+
+ <FIN> Arrêt normal dans "FIN".
+
+ La mémoire demandée au lancement est surestimée, elle est de 762.00 Mo.
+ Le pic mémoire utilisée est de 249.11 Mo.
+
+  
+ <I>       FERMETURE DES BASES EFFECTUEE
+  
+   STATISTIQUES CONCERNANT L'ALLOCATION DYNAMIQUE :
+     TAILLE CUMULEE MAXIMUM            :                    27  Mo.
+     TAILLE CUMULEE LIBEREE            :                     5  Mo.
+     NOMBRE TOTAL D'ALLOCATIONS        :                  7259
+     NOMBRE TOTAL DE LIBERATIONS       :                  7259
+     APPELS AU MECANISME DE LIBERATION :                     0
+     TAILLE MEMOIRE CUMULEE RECUPEREE  :                     0  Mo.
+     VOLUME DES LECTURES               :                     0  Mo.
+     VOLUME DES ECRITURES              :                     0  Mo.
+  
+   MEMOIRE JEVEUX MINIMALE REQUISE POUR L'EXECUTION :      21.32 Mo
+     - IMPOSE DE NOMBREUX ACCES DISQUE
+     - RALENTIT LA VITESSE D'EXECUTION
+   MEMOIRE JEVEUX OPTIMALE REQUISE POUR L'EXECUTION :      27.33 Mo
+     - LIMITE LES ACCES DISQUE
+     - AMELIORE LA VITESSE D'EXECUTION
+   MAXIMUM DE MEMOIRE UTILISEE PAR LE PROCESSUS     :     249.11 Mo
+     - COMPREND LA MEMOIRE CONSOMMEE PAR  JEVEUX, 
+       LE SUPERVISEUR PYTHON, LES LIBRAIRIES EXTERNES
+  
+ <I>       FIN D'EXECUTION LE : ME-26-FEVR-2014 15:43:27
+
+
+  <I> Informations sur les temps d'exécution
+      Temps cpu total                        34.38 s
+      Temps cpu user total                    7.72 s
+      Temps cpu systeme total                26.66 s
+      Temps cpu restant                     505.62 s
+
+
+  La signature de la base sauvegardée est (à l'adresse 0) :
+    1589fbbe77fc7d9d97a847ae3cc0b6ec659e178d
+
+ ********************************************************************************
+ * COMMAND                  :       USER :     SYSTEM :   USER+SYS :    ELAPSED *
+ ********************************************************************************
+ * init (jdc)               :       0.91 :       2.28 :       3.19 :       3.59 *
+ *  . compile               :       0.00 :       0.01 :       0.01 :       0.00 *
+ *  . exec_compile          :       0.29 :       0.55 :       0.84 :       1.03 *
+ *  . report                :       0.24 :       0.48 :       0.72 :       0.73 *
+ *  . build                 :       0.00 :       0.00 :       0.00 :       0.00 *
+ * DEBUT                    :       3.28 :      18.33 :      21.61 :      28.94 *
+ * DEFI_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.00 *
+ * LIRE_MAILLAGE            :       0.00 :       0.00 :       0.00 :       0.16 *
+ * AFFE_MODELE              :       0.00 :       0.00 :       0.00 :       0.12 *
+ * AFFE_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.02 *
+ * AFFE_CHAR_MECA           :       0.00 :       0.00 :       0.00 :       0.04 *
+ * MECA_STATIQUE            :       0.61 :       0.00 :       0.61 :       0.71 *
+ * FIN                      :       0.61 :       0.00 :       0.61 :       0.33 *
+ *  . part Superviseur      :       7.11 :      26.66 :      33.77 :      45.05 *
+ *  . part Fortran          :       0.61 :       0.00 :       0.61 :       0.99 *
+ ********************************************************************************
+ * TOTAL_JOB                :       7.72 :      26.66 :      34.38 :      46.04 *
+ ********************************************************************************
+
+JDC.py : ERREUR A L'EXECUTION - INTERRUPTION
+>> JDC.py : DEBUT RAPPORT
+CR d'execution de JDC en MIXTE
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   ! <S> Exception utilisateur levee mais pas interceptee.      !
+   ! Les bases sont fermees.                                    !
+   ! Type de l'exception : error                                !
+   !                                                            !
+   !  le calcul de l'option :  CHAR_MECA_FR1D3D                 !
+   !  n'est possible pour aucun des types d'éléments du LIGREL. !
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+fin CR d'execution de JDC en MIXTE
+
+>> JDC.py : FIN RAPPORT
+EXECUTION_CODE_ASTER_EXIT_0003-17672-tobysalome20141=1

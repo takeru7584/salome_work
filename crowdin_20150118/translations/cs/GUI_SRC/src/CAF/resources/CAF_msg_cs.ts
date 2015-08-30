@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="cs" sourcelanguage="en">
+  <context>
+    <name>CAF_Application</name>
+    <message>
+      <source>MEN_APP_EDIT</source>
+      <translation>&amp;Opravit</translation>
+    </message>
+    <message>
+      <source>INF_ALL_FILTER</source>
+      <translation>Všechny soubory (*.*)</translation>
+    </message>
+    <message>
+      <source>INF_ALL_DOCUMENTS_FILTER</source>
+      <translation>Všechny čitelné dokumenty</translation>
+    </message>
+    <message>
+      <source>MEN_DESK_EDIT</source>
+      <translation>&amp;Opravit</translation>
+    </message>
+    <message>
+      <source>MEN_APP_EDIT_UNDO</source>
+      <translation>&amp;Zrušit</translation>
+    </message>
+    <message>
+      <source>MEN_APP_EDIT_REDO</source>
+      <translation>&amp;Předělat</translation>
+    </message>
+    <message>
+      <source>PRP_APP_EDIT_REDO</source>
+      <translation>PRP_APP_EDIT_REDO</translation>
+    </message>
+    <message>
+      <source>PRP_APP_EDIT_UNDO</source>
+      <translation>PRP_APP_EDIT_UNDO</translation>
+    </message>
+    <message>
+      <source>TOT_APP_EDIT_REDO</source>
+      <translation>Předělat</translation>
+    </message>
+    <message>
+      <source>TOT_APP_EDIT_UNDO</source>
+      <translation>Zrušit</translation>
+    </message>
+    <message>
+      <source>INF_APP_REDOACTIONS</source>
+      <translation>INF_APP_REDOACTIONS</translation>
+    </message>
+    <message>
+      <source>INF_APP_UNDOACTIONS</source>
+      <translation>INF_APP_UNDOACTIONS</translation>
+    </message>
+    <message>
+      <source>ABOUT_INFO</source>
+      <translation>ABOUT_INFO</translation>
+    </message>
+  </context>
+</TS>

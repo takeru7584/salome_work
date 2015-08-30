@@ -1,0 +1,8 @@
+#!/bin/bash
+VERSION=a016c
+echo `rm /mnt/hgfs/opencae/custom_project/customize_salome-meca_to_japanese/patch/translate_salome_meca_2014_1_to_japanese_patch_$VERSION.tgz`
+echo `find ./ -name "*_ja.qm" -exec tar uvf /mnt/hgfs/opencae/custom_project/customize_salome-meca_to_japanese/patch/translate_salome_meca_2014_1_to_japanese_patch_$VERSION.tar {} \;`
+echo `tar uvf /mnt/hgfs/opencae/custom_project/customize_salome-meca_to_japanese/patch/translate_salome_meca_2014_1_to_japanese_patch_$VERSION.tar ./V7_3_0/modules/GUI_V7_3_0/share/salome/resources/gui/LightApp.xml`
+echo `gzip /mnt/hgfs/opencae/custom_project/customize_salome-meca_to_japanese/patch/translate_salome_meca_2014_1_to_japanese_patch_$VERSION.tar`
+echo `mv /mnt/hgfs/opencae/custom_project/customize_salome-meca_to_japanese/patch/translate_salome_meca_2014_1_to_japanese_patch_$VERSION.tar.gz /mnt/hgfs/opencae/custom_project/customize_salome-meca_to_japanese/patch/translate_salome_meca_2014_1_to_japanese_patch_$VERSION.tgz`
+

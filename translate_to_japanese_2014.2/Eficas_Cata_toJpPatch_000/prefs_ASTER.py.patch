@@ -1,0 +1,16 @@
+@@ -52,6 +52,7 @@
+ rep_doc_115 = rep_doc_stable
+ rep_doc_testing = osp.join(repIni, 'Doc', 'clefs_docu_testing')
+ rep_doc_121 = rep_doc_testing
++rep_doc_STA11ja = rep_doc_stable
+ exec_acrobat = "/usr/bin/firefox"
+ 
+ catalogues=(
+@@ -62,6 +63,7 @@
+     ('ASTER', 'stable',  osp.join(rep_cata, 'cata_v11'), 'python', 'defaut'),
+     ('ASTER', '12.1',    osp.join(rep_cata, 'cata_v12'), 'python'),
+     ('ASTER', 'testing', osp.join(rep_cata, 'cata_v12'), 'python'),
++    ('ASTER', 'STA11ja',    osp.join(rep_cata, 'cata_v11ja'), 'python'),
+ )
+ 
+ def addCatalog(catalogName, catalogPath):
